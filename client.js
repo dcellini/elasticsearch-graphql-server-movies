@@ -1,4 +1,5 @@
-const ElasticSearch = require('elasticsearch');
+//const ElasticSearch = require('elasticsearch');
+import ElasticSearch from "elasticsearch";
 
 /**
  * *** ElasticSearch *** client
@@ -16,4 +17,4 @@ const client = new ElasticSearch.Client({
 //   log: 'trace'
 // });
 
-module.exports = client;
+export default client

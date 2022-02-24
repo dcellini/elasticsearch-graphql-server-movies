@@ -1,6 +1,6 @@
-const {ElasticSearchClient} = require('./server.elasticsearch');
-const elasticSearchSchema = require('./server.es.schema');
-const {makeExecutableSchema} = require('graphql-tools');
+import ElasticSearchClient from "./elasticSearchClient.js"
+import elasticSearchSchema from "./schema/index.js";
+import {makeExecutableSchema} from 'graphql-tools';
 
 // Construct a schema, using GraphQL schema language
 const typeDefs = `
@@ -51,7 +51,9 @@ const resolvers = {
   }
 };
 
-module.exports = makeExecutableSchema({
+const madeExecutableSchema = makeExecutableSchema({
   "typeDefs": [typeDefs],
   "resolvers": resolvers
 });
+
+export default madeExecutableSchema;

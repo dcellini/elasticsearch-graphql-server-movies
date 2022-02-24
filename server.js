@@ -1,13 +1,21 @@
-const express = require('express');
+import express from "express";
+import bodyParser from "body-parser";
+import path from 'path';
+import {fileURLToPath} from 'url';
+import {ApolloServer} from "apollo-server-express";
+import ApiElasticSearchClient from "./apiElasticSearchClient.js";
+import madeExecutableSchema from "./server.graphql.js";
+
 const app = express();
-const bodyParser = require('body-parser');
-const path = require('path');
-const {ApolloServer} = require('apollo-server-express');
-const {ApiElasticSearchClient} = require('./server.elasticsearch');
-const madeExecutableSchema = require('./server.graphql');
 
 // PORT
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3050;
+
+// The import.meta object exposes context-specific metadata to a JavaScript module. It contains information about the module, like the module's URL.
+const __filename = fileURLToPath(import.meta.url);
+
+// e.g. "/home/john/Desktop/javascript"
+const __dirname = path.dirname(__filename);
 
 let apolloServer = null;
 

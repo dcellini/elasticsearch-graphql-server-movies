@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/davidcellini/.nvm/versions/node/v14.17.6/bin/node /Users/davidcellini/.nvm/versions/node/v14.17.6/bin/yarn add Elasticsearch -S
+  /Users/davidcellini/.nvm/versions/node/v14.17.6/bin/node /Users/davidcellini/.nvm/versions/node/v14.17.6/bin/yarn add elasticsearc -S
 
 PATH: 
   /Users/davidcellini/.nvm/versions/node/v14.17.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/davidcellini/.nvm/versions/node/v14.17.6/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/Elasticsearch: Not found
+  Error: https://registry.yarnpkg.com/elasticsearc: Not found
       at Request.params.callback [as _callback] (/Users/davidcellini/.nvm/versions/node/v14.17.6/lib/node_modules/yarn/lib/cli.js:66140:18)
       at Request.self.callback (/Users/davidcellini/.nvm/versions/node/v14.17.6/lib/node_modules/yarn/lib/cli.js:140885:22)
       at Request.emit (events.js:400:28)
@@ -29,6 +29,7 @@ Trace:
 npm manifest: 
   {
     "name": "elasticsearch-graphql-server",
+    "type": "module",
     "version": "1.0.0",
     "description": "",
     "main": "server.client.js",
