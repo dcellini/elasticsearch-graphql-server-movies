@@ -20,3 +20,8 @@ In elasticsearch run the following command and you should see the index has gone
 ### Bulk import
 Import the list of movies from json/movies.js by navigating to the indexes folder and running `node bulk-import`
 In elasticsearch run the following command to see your documents `GET /movies/_search`
+
+### Start graphql Playground
+Have docker running as per step 1
+Also run `node server.js` in another terminal. The playground will run on port 3500 or whichever port you specify
+So can be accessed at http://localhost:3050/graphql
