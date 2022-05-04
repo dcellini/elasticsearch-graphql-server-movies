@@ -18,7 +18,7 @@ _.map(_.keys(BULK_DATA), uuid => {
   ];
 });
 
-client.bulk({body: collectionBulk}, function (err, r) {
+client.bulk({body: collectionBulk}, (err, r) => {
   if (err) {
     console.log(collectionBulk)
     console.log(`Failed Bulk operation\n`, err);

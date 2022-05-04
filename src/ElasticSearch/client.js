@@ -1,4 +1,3 @@
-//const ElasticSearch = require('elasticsearch');
 import ElasticSearch from "elasticsearch";
 
 /**

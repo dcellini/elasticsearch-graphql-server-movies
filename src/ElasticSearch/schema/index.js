@@ -1,5 +1,5 @@
 // This schema is utilised in server.elasticsearch.js
-const schema = {
+const getAllSchema = {
   "size": 1000,
   "from": 0,
   "query": {
@@ -7,5 +7,5 @@ const schema = {
   }
 };
 
-export default schema;
+export default getAllSchema;
 
